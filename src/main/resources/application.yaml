@@ -15,5 +15,23 @@ spring:
       hibernate:
         format_sql: true
         use_sql_comments: true
+  mail:
+    port: 465
+    host: xxxx
+    password: aaaa
+    username: aaaa
+    default-encoding : UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enanle: true
+
+
+
 #$ curl -X POST http://localhost:8080/user/add -H "Content-Type:  application/json" -d '{"userName": "two", "userEmail":"minhchi@gmail.com"}'
 #  $ curl http://localhost:8080/user/search\?email\=minhchi@gmail.com\&name\=two
